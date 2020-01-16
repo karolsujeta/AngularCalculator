@@ -1,0 +1,118 @@
+.main-box{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid #ffffff;
+}
+
+.number{
+    height: 40px;
+    width: 30%;
+    background: linear-gradient(to bottom, #f1f1f1f1 5%, #babababa 100%);
+	border-radius:50px;
+	border:2px solid #ffffff;
+	display:table-cell;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:20px;
+    padding:30px 15px;
+    text-align: center;
+    line-height: 5px;
+}
+
+.number:hover{
+    background: linear-gradient(to bottom, #babababa 5%, #f1f1f1f1 100%);
+}
+
+.equal{
+    height: 40px;
+    width: 30%;
+    background: linear-gradient(to bottom, #f1f1f1f1 5%, #00853c 60%);
+	border-radius:50px;
+	border:2px solid #ffffff;
+	display:table-cell;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+    padding:30px 15px;
+    text-align: center;
+    line-height: 5px;
+}
+
+.equal:hover{
+    background: linear-gradient(to bottom, #00853c 5%, #f1f1f1f1 60%);
+    color: #000000;
+}
+
+.clear{
+    height: 40px;
+    width: 30%;
+    background: linear-gradient(to bottom, #f1f1f1f1 5%, #d85600 60%);
+	border-radius:50px;
+	border:2px solid #ffffff;
+	display:table-cell;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+    padding:30px 15px;
+    text-align: center;
+    line-height: 5px;
+}
+
+.clear:hover{
+    background: linear-gradient(to bottom, #d85600 5%, #f1f1f1f1 60%);
+    color: #000000;
+}
+
+.operation{
+    height: 40px;
+    width: 80%;
+    background: linear-gradient(to bottom, #f1f1f1f1 5%, #005a92ba 60%);
+    border-radius:50px;
+    border:2px solid #ffffff;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:20px;
+    padding:30px 30px;
+    text-align: center;
+    line-height: 5px;
+    cursor: pointer;
+}
+
+.operation:hover{
+    background: linear-gradient(to bottom, #005a92ba 5%, #f1f1f1f1 60%);
+    color: #000000;
+}
+
+.result-box{
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+}
+
+.numbers-box{
+    width: 70%;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.operation-box{
+    width: 30%;
+    height:350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
