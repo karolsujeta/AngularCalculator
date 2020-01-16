@@ -1,0 +1,26 @@
+<div class="mainbox">
+    <div class="header">KALKULATOR (dla dwóch liczb)</div>
+
+    <div class="numberbox">
+        <input [(ngModel)]="num1" class="inputbox">
+        <input [(ngModel)]="num2" class="inputbox">
+    </div>
+
+    <div class="operation-box">
+        <button class="option" (click)="add()">Dodaj</button>
+        <button class="option" (click)="subtract()">Odejmij</button>
+        <button class="option" (click)="multiply()">Pomnóż</button>
+        <button class="option" (click)="devide()">Podziel</button>
+    </div>
+
+    <div class="result-box">
+        <div class="previev">
+            {{shownumbers}}
+        </div>
+
+        <div class="result">
+            Wynik: {{result}}
+        </div>
+    </div>
+
+</div>

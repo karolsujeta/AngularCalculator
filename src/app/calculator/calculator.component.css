@@ -1,0 +1,77 @@
+.mainbox{
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #214739;
+}
+
+.header{
+    font-size: 18px;
+    padding: 8px;
+    text-align: center;
+    margin-bottom: 3px;
+    background-color: #ffffff;
+    color: #000000;
+}
+.numberbox{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 3px;
+}
+
+.inputbox{
+    width: 12%;
+    height: 50px;
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+}
+
+.operation-box{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3px;
+    width: 100%;
+}
+
+.option{
+    height: 50px;
+    width: 20%;
+    font-size: 20px;
+    font-style: italic;
+    border: solid #ffffff;
+    border-radius: 35px;
+}
+
+.option:hover{
+    background-color: #214739;
+    transition: 200ms;
+    color: #ffffff;
+}
+
+.result-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.previev{
+    height: 30px;
+    font-size: 22px;
+    text-align: center;
+    padding: 5px;
+    font-style: italic;
+    
+}
+
+.result{
+    height: 30px;
+    font-size: 22px;
+    text-align: center;
+    padding: 5px;
+    background-color: #31a36e;
+}
+
+
+
+
+
