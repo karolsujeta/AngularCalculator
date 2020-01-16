@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from "jquery";
+import { ValueConverter } from '@angular/compiler/src/render3/view/template';
 
 @Component({
   selector: 'app-calculator-expanded',
@@ -12,4 +14,10 @@ export class CalculatorExpandedComponent implements OnInit {
   ngOnInit() {
   }
 
+  addButton() {
+    $(".number").click(function () {
+      alert($(this).val());
+    });
+  }
 }
+
