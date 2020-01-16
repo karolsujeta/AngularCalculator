@@ -14,9 +14,13 @@ export class CalculatorExpandedComponent implements OnInit {
   ngOnInit() {
   }
 
+
   addButton() {
-    $(".number").click(function () {
-      alert($(this).val());
+    $(document).ready(function () {
+      $(".number").click(function () {
+        // alert($(this).val());
+        $(".result-box").text($(this).text());
+      });
     });
   }
 }
