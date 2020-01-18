@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from "jquery";
-import { ValueConverter } from '@angular/compiler/src/render3/view/template';
 
+declare var $: any;
 @Component({
   selector: 'app-calculator-expanded',
   templateUrl: './calculator-expanded.component.html',
@@ -14,14 +13,39 @@ export class CalculatorExpandedComponent implements OnInit {
   ngOnInit() {
   }
 
+  // addButton() {
+  //   $(document).ready(function () {
+  //     $(".number").click(function () {
+  //       // alert($(this).val());
+  //       $(".result-box").text($(this).text());
+  //     });
+  //   });
+  // }
 
-  addButton() {
+  // showValue() {
+  //   $(document).ready(function () {
+  //     $('button').on('click', function (e) {
+  //       console.log('e', e.target.innerHTML);
+  //     });
+  //   });
+  // };
+
+
+  showButton() {
     $(document).ready(function () {
-      $(".number").click(function () {
-        // alert($(this).val());
-        $(".result-box").text($(this).text());
+      $('button').click(function (e) {
+        let btn = e.target.innerHTML;
+        if (btn >= '0' && btn <= '9') { $.fn.handleFunction(btn); }
+        else { $.fn.handleOperator(btn); }
       });
-    });
-  }
-}
+      $.fn.handleFunction = function (number) {
+        alert(number);
+      }
 
+      $.fn.handleOperator = function (operator) {
+        alert(operator);
+      }
+    });
+  };
+
+}
